@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="var" path="M2_REPO/javax/activation/activation/1.1/activation-1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/javax/javaee-api/7.0/javaee-api-7.0.jar" sourcepath="M2_REPO/javax/javaee-api/7.0/javaee-api-7.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/sun/mail/javax.mail/1.5.0/javax.mail-1.5.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-server/2.2.0.Final/wildfly-server-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-controller/2.2.0.Final/wildfly-controller-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/jboss-dmr/1.3.0.Final/jboss-dmr-1.3.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-controller-client/2.2.0.Final/wildfly-controller-client-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-protocol/2.2.0.Final/wildfly-protocol-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/remoting/jboss-remoting/4.0.21.Final/jboss-remoting-4.0.21.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/xnio/xnio-api/3.4.0.Final/xnio-api-3.4.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/sasl/jboss-sasl/1.0.5.Final/jboss-sasl-1.0.5.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/threads/jboss-threads/2.2.1.Final/jboss-threads-2.2.1.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/common/wildfly-common/1.1.0.Final/wildfly-common-1.1.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/xnio/xnio-nio/3.3.6.Final/xnio-nio-3.3.6.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/security/wildfly-elytron/1.0.2.Final/wildfly-elytron-1.0.2.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-core-security/2.2.0.Final/wildfly-core-security-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-core-security-api/2.2.0.Final/wildfly-core-security-api-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-version/2.2.0.Final/wildfly-version-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/modules/jboss-modules/1.5.2.Final/jboss-modules-1.5.2.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/msc/jboss-msc/1.2.6.Final/jboss-msc-1.2.6.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/logmanager/jboss-logmanager/2.0.4.Final/jboss-logmanager-2.0.4.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/staxmapper/1.2.0.Final/staxmapper-1.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-domain-http-interface/2.2.0.Final/wildfly-domain-http-interface-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/undertow/undertow-core/1.4.0.Final/undertow-core-1.4.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-domain-management/2.2.0.Final/wildfly-domain-management-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/picketbox/picketbox/4.9.6.Final/picketbox-4.9.6.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-deployment-repository/2.2.0.Final/wildfly-deployment-repository-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/jboss-vfs/3.2.12.Final/jboss-vfs-3.2.12.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-platform-mbean/2.2.0.Final/wildfly-platform-mbean-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-process-controller/2.2.0.Final/wildfly-process-controller-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/marshalling/jboss-marshalling/1.4.11.Final/jboss-marshalling-1.4.11.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-remoting/2.2.0.Final/wildfly-remoting-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-io/2.2.0.Final/wildfly-io-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-network/2.2.0.Final/wildfly-network-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/wildfly/core/wildfly-self-contained/2.2.0.Final/wildfly-self-contained-2.2.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/jandex/2.0.2.Final/jandex-2.0.2.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/invocation/jboss-invocation/1.4.1.Final/jboss-invocation-1.4.1.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/stdio/jboss-stdio/1.0.2.GA/jboss-stdio-1.0.2.GA.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

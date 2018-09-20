@@ -1,0 +1,13 @@
+api\view\RespuestaClimaDiaPuntualView.class
+api\Meteorologo.class
+api\galaxia\Vulcano.class
+api\view\RespuestaPeriodosView.class
+api\galaxia\Ferengi.class
+api\DiaConsultado.class
+api\comun\TipoClimaEnum.class
+api\ClimaManager$1.class
+api\ClimaManager.class
+api\ClimaRest.class
+api\galaxia\AbstractCivilizacion.class
+api\comun\VectorXY.class
+api\galaxia\Betasoide.class
