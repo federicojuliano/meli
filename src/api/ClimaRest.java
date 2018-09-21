@@ -26,6 +26,7 @@ public class ClimaRest extends Application{
 
 	@POST
 	@Path("/climaDia")
+	//request ejemplo: {"dia":566}
 	public Response obtenerClimaPorDia(DiaConsultadoViewRequest request) {
 		ClimaManager smn = new ClimaManager();
 		RespuestaClimaDiaPuntualView respuestaView = smn.predecirPorDia(request.getDia());
@@ -34,7 +35,6 @@ public class ClimaRest extends Application{
 	
 	@POST
 	@Path("/predecirDiezAnios")
-	//request ejemplo: {"dia":566}
 	public Response predecirDiezAnios() {
 		ClimaManager smn = new ClimaManager();
 		int aniosConsultados = DIEZ_ANIOS;
