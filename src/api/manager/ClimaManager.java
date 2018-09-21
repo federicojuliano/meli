@@ -1,11 +1,14 @@
-package api;
+package api.manager;
 
+import api.Meteorologo;
+import api.Persistencia;
 import api.comun.TipoClimaEnum;
 import api.comun.VectorXY;
 import api.galaxia.Betasoide;
 import api.galaxia.Ferengi;
 import api.galaxia.Vulcano;
 import api.view.RespuestaClimaDiaPuntualView;
+import api.view.RespuestaModeloGeneradoView;
 import api.view.RespuestaPeriodosView;
 
 /** Clase para predecir el clima
@@ -13,6 +16,10 @@ import api.view.RespuestaPeriodosView;
  *
  */
 public class ClimaManager {
+
+	private static final String NOMBRE_ARCHIVO_SALIDA = "modelo-de-datos";
+	private static final String INCORRECTO = "ERROR";
+	private static final String OK = "OK";
 
 	public RespuestaPeriodosView predecirProximosAnios(int anios) {
 		
@@ -23,12 +30,7 @@ public class ClimaManager {
 		Ferengi fe = new Ferengi();
 		Vulcano vu = new Vulcano();
 		
-		//SE HACE UN ESTIMATIVO DE ANIOS BISIESTOS
-		int cantidadBisiestos = 0; 
-		if(anios > 4) {
-			cantidadBisiestos = anios % 4;
-		}
-		int diasEvaluados = anios * 365 + cantidadBisiestos;
+		int diasEvaluados = aniosADias(anios);
 		
 		TipoClimaEnum estacion;
 		int trianguloMayor = 0;
@@ -94,5 +96,48 @@ public class ClimaManager {
 		respuesta.setDia(dia);
 		
 		return respuesta;
+	}
+
+	public RespuestaModeloGeneradoView generarModeloDatos(int aniosAGenerar) {
+		
+		RespuestaModeloGeneradoView respuesta = new RespuestaModeloGeneradoView();
+		
+		Meteorologo meteorologo = new Meteorologo();
+		Betasoide be = new Betasoide();
+		Ferengi fe = new Ferengi();
+		Vulcano vu = new Vulcano();
+		
+		int diasEvaluados = aniosADias(aniosAGenerar);
+		
+		TipoClimaEnum estacion;
+		Persistencia persistencia = new Persistencia(NOMBRE_ARCHIVO_SALIDA);
+		
+		for(int i = 0 ; i < diasEvaluados ; i++) {
+			estacion = meteorologo.predecirClima(be, fe, vu, i);
+			try {
+				persistencia.almacenarRegistro(estacion, i);
+			} catch (Exception e) {
+				respuesta.setModeloGenerado(INCORRECTO);
+			}
+		}
+		respuesta.setModeloGenerado(OK);
+		return respuesta;
+	}
+
+	/** Se calculan la cantidad de dias que hay en los anios indicados.
+	 * Se hace un estimativo de los anios bisiestos.
+	 * @param anios
+	 * @return
+	 */
+	private int aniosADias(int anios) {
+		int diasEvaluados;
+		int cantidadBisiestos = 0; 
+
+		//SE HACE UN ESTIMATIVO DE ANIOS BISIESTOS
+		if(anios > 4) {
+			cantidadBisiestos = anios % 4;
+		}
+		diasEvaluados = anios * 365 + cantidadBisiestos;
+		return diasEvaluados;
 	}
 }

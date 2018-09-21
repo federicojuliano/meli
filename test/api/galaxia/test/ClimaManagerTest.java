@@ -2,7 +2,7 @@ package api.galaxia.test;
 
 import org.junit.Test;
 
-import api.ClimaManager;
+import api.manager.ClimaManager;
 import api.view.RespuestaPeriodosView;
 
 public class ClimaManagerTest {

@@ -3,11 +3,13 @@ api\Meteorologo.class
 api\galaxia\Vulcano.class
 api\view\RespuestaPeriodosView.class
 api\galaxia\Ferengi.class
-api\DiaConsultado.class
+api\Persistencia.class
+api\view\RespuestaModeloGeneradoView.class
+api\manager\ClimaManager$1.class
 api\comun\TipoClimaEnum.class
-api\ClimaManager$1.class
-api\ClimaManager.class
+api\manager\ClimaManager.class
 api\ClimaRest.class
 api\galaxia\AbstractCivilizacion.class
+api\view\DiaConsultadoViewRequest.class
 api\comun\VectorXY.class
 api\galaxia\Betasoide.class

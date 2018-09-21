@@ -1,9 +1,9 @@
-package api;
+package api.view;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class DiaConsultado {
+public class DiaConsultadoViewRequest {
 
 	private int dia;
 
