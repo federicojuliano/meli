@@ -16,7 +16,7 @@ public class PersistenciaTest {
 		
 		TipoClimaEnum[] climas = TipoClimaEnum.values();
 		Random rand = new Random();
-		for(int i = 0 ; i < 50 ; i++) {
+		for(int i = 0 ; i < 3650 ; i++) {
 			persistencia.almacenarRegistro(climas[rand.nextInt(3)], i);
 		}
 		
